@@ -17,6 +17,21 @@ Designed to support deeper understanding across worldviews, prevent unconscious 
 
 ---
 
+## GitHub Topics (for desktop users)
+
+If viewing on desktop, please help tag this repo using:
+
+ai
+nlp
+cultural-intelligence
+youtube-analysis
+bias-detection
+transcript-analysis
+open-source
+indigenous-knowledge
+ethics
+
+
 # Dependencies
 
 Install all required packages with:
