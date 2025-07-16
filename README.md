@@ -20,10 +20,10 @@ Designed to support deeper understanding across worldviews, prevent unconscious 
 # Dependencies
 
 Install all required packages with:
-
+###
 ```bash
 pip install -q google-api-python-client transformers langdetect sentence-transformers pandas
-
+###
 
 How It Works
 	1.	Fetches YouTube video metadata via video_id
