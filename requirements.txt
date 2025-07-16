@@ -1,0 +1,12 @@
+google-api-python-client
+transformers
+langdetect
+sentence-transformers
+pandas
+youtube-transcript-api
+nltk
+spacy
+
+run:
+
+pip install -r requirements.txt
