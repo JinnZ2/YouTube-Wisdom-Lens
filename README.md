@@ -17,7 +17,7 @@ Designed to support deeper understanding across worldviews, prevent unconscious 
 
 ---
 
-## Dependencies
+# Dependencies
 
 Install all required packages with:
 
