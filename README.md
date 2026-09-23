@@ -123,7 +123,7 @@ Built to inspire pluralistic, culturally respectful AI systems.
  License
  
 
-Licensed under the MIT License – Free to use, modify, and share with proper attribution.
+Licensed under CC0 1.0 Universal – Free to use, modify, and share. No attribution required.
 
 
 # YouTube-Wisdom-Lens
