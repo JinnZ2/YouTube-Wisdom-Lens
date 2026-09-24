@@ -14,6 +14,7 @@ from api_keys_config import DEFAULT_CHUNK_SIZE
 from cultural_lens import CulturalLens
 from fact_verifier import verify_claim
 from sensitivity_check import cultural_sensitivity_check
+from disaster_footage_check import share_urgency_check
 
 logger = logging.getLogger(__name__)
 
@@ -57,6 +58,8 @@ def analyze_transcript(transcript_text, chunk_size=DEFAULT_CHUNK_SIZE):
             - markers (list[str]): cultural keywords found
             - warnings (list[str]): perspective bias warnings
             - sensitivity (list[str]): protected term warnings
+            - share_urgency (list[dict]): time-attack language on the
+              decision to share (disaster_footage_check; stdlib, no model)
             - fact_check (dict): fact verification results
 
     Pipeline per chunk:
@@ -65,6 +68,7 @@ def analyze_transcript(transcript_text, chunk_size=DEFAULT_CHUNK_SIZE):
         3. Cultural perspective analysis via CulturalLens
         4. Semantic fact verification via cosine similarity
         5. Protected term sensitivity scan
+        6. Share-urgency scan (word-boundary; tags mechanism TIME_ATTACK)
     """
     lens = CulturalLens()
     sentences = nltk.sent_tokenize(transcript_text)
@@ -93,6 +97,7 @@ def analyze_transcript(transcript_text, chunk_size=DEFAULT_CHUNK_SIZE):
             "markers": cultural_result.get("cultural_markers", []),
             "warnings": cultural_result.get("perspective_warnings", []),
             "sensitivity": sensitivity,
+            "share_urgency": share_urgency_check(text),
             "fact_check": fact_result,
         })
 
