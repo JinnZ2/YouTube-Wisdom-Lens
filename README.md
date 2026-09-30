@@ -127,6 +127,7 @@ Built to inspire pluralistic, culturally respectful AI systems.
 Dedicated to the public domain under CC0-1.0 – free to use, modify, and share; attribution appreciated, not required.
 
 Relicensed from MIT to CC0-1.0 on 2026-09-24; earlier copies obtained under MIT remain under MIT.
+Licensed under CC0 1.0 Universal – Free to use, modify, and share. No attribution required.
 
 
 # YouTube-Wisdom-Lens
