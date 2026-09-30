@@ -14,6 +14,7 @@ Designed to support deeper understanding across worldviews, prevent unconscious 
 - **Fact Similarity Scoring** using sentence embeddings across multiple knowledge domains
 - **Bias & Sensitivity Alerts** including Western-centrism, sacred term misuse, and indigenous reference flags
 - **Real-time YouTube Metadata Pull** using YouTube Data API v3
+- **Disaster Footage Coupling Check** (`disaster_footage_check.py`, standard library only): before sharing a disaster clip, answer a short set of questions about whether the scene's layers react to each other (birds and animals first, trees from the base, one light direction). Returns `COUPLING_BROKEN`, `COUPLING_CONSISTENT` or `NOT_EVALUABLE`, never REAL or FAKE, and always prints the provenance steps. Title and description are scanned for "share before they delete it" pressure. Accuracy unmeasured.
 
 ---
 
@@ -123,6 +124,9 @@ Built to inspire pluralistic, culturally respectful AI systems.
  License
  
 
+Dedicated to the public domain under CC0-1.0 – free to use, modify, and share; attribution appreciated, not required.
+
+Relicensed from MIT to CC0-1.0 on 2026-09-24; earlier copies obtained under MIT remain under MIT.
 Licensed under CC0 1.0 Universal – Free to use, modify, and share. No attribution required.
 
 
