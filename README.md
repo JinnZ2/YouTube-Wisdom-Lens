@@ -1,3 +1,6 @@
+> Before reading or editing anything here, read READ_ME_THIS_WAY.md.
+> Mismatches, dead ends and odd names in this repo are kept on purpose.
+
 #  YouTube Wisdom Lens Prototype
 
 **Version 0.1 – Cultural Context & Bias Detection**
